@@ -13,7 +13,7 @@
       tags:
          - create-dir
 
-    - name: Copy the war file, dockerfile & lwplabs-com.yml to docker master server
+    - name: Copy the war file, Dockerfile & lwplabs-com.yml to docker master server
       copy:
         src: "{{ WORKSPACE }}/"
         dest: /tmp/{{ JOB_NAME }}
