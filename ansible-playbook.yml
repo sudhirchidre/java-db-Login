@@ -49,7 +49,7 @@
         var: out2
 
 - name: "Play 3 Install Python packages and docker image push"
-  hosts: dockerMaster
+  hosts: docker-master
   become: yes
   vars:
     ansible_python_interpreter: /usr/bin/python3
@@ -96,7 +96,7 @@
         var: out5
 
 - name: "Play 3 docker stack deploy"
-  hosts: dockerMaster
+  hosts: docker-master
   become: yes
   tasks:
     - name: Remove stack
