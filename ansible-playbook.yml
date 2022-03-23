@@ -24,7 +24,7 @@
         - copy_code
 
 - name: "Play 2- python installation"
-  hosts: dockerMaster
+  hosts: docker-master
   become: yes
   tasks:
     - name: Install Python 3.6
